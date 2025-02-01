@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse4Pets</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="images/dog-cartoon.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="mb-44 sm:mb-48 md:mb-52 lg:mb-64 xl:mb-80 2xl:mb-96">
+    <!------------------------------ Navbar ------------------------------>
+    <div class="bg-navbar">
+      <nav class="py-3 px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto">
+        <div class="navbar p-0 flex justify-between">
+          <div>
+            <a class="btn btn-ghost text-2xl p-0"><img src="./images/logo-header.png" loading="lazy" alt="Logo"><span
+                class="font-sora text-black font-normal hidden sm:block text-xl">Browse<span
+                  class="text-yellow-400">4</span>Pets</span></a>
+          </div>
+          <div class="hidden lg:flex font-sora font-normal">
+            <ul class="menu menu-horizontal px-2 text-base">
+              <li><a>Find Pets</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex items-center">
+            <button class="btn btn-ghost btn-circle">
+              <i class="fa-regular fa-bell text-2xl"></i>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+              <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            </button>
+            <button
+              class="btn btn-neutral bg-white border-yellow-400 text-black hover:text-white text-base font-sora font-normal px-7 h-10 min-h-9 mx-2">Login</button>
+            <button
+              class="btn btn-neutral bg-yellow-400 border-none text-black hover:text-white text-base font-sora font-normal px-7 h-10 min-h-9 ml-2">Register</button>
+          </div>
+          <div class="flex-none lg:hidden">
+            <button class="btn btn-square btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                class="inline-block h-9 w-9 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <hr class="h-[2px] bg-gray-400 sm:hidden">
+    </div>
+
+    <!------------------------------ Hero Section ------------------------------>
+    <section class="my-12 py-2 px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto relative">
+      <div class="text-left text-black max-w-sm lg:max-w-md 2xl:max-w-lg">
+        <h1 class="text-4xl font-medium font-adlam">Pamper Your Pet<br>Because They Deserve The Best</h1>
+        <p class="py-4 font-sora opacity-70 mb-2">
+          Discover a world of treats, toys and essentials handpicked for your furry friends. Shop now and make tails
+          wag with joy!
+        </p>
+        <button
+          class="btn btn-neutral bg-yellow-400 border-none text-black hover:text-white text-base font-sora font-normal px-7 h-10 min-h-9">Find
+          Pets</button>
+      </div>
+      <div
+        class="absolute -z-10 -bottom-28 sm:-bottom-32 md:-bottom-36 lg:-bottom-44 xl:-bottom-56 2xl:-bottom-64 right-1 lg:right-16 xl:right-32 2xl:right-48 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl">
+        <img src="./images/cat-big.png" loading="lazy" alt="Big Cat">
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!------------------------------ Browse By Categories ------------------------------>
+    <section class="lg:mb-24 px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto text-black">
+      <h2 class="font-medium font-adlam text-2xl text-center sm:text-left">Browse By Categories</h2>
+      <div
+        class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 md:gap-4 lg:gap-2 xl:gap-4 max-w-96 sm:max-w-none mx-auto">
+        <div class="card bg-card rounded-lg">
+          <div class="card-body p-7 items-center text-center">
+            <div class="avatar">
+              <div class="p-5 bg-white rounded-full mx-auto">
+                <img src="./images/dog-cartoon.png" loading="lazy" alt="Dog Cartoon" />
+              </div>
+            </div>
+            <h4 class="card-title font-adlam font-normal mt-3">Dogs</h4>
+            <p class="font-sora text-sm">3 items</p>
+          </div>
+        </div>
+        <div class="card bg-card rounded-lg">
+          <div class="card-body p-7 items-center text-center">
+            <div class="avatar">
+              <div class="p-5 bg-white rounded-full mx-auto">
+                <img src="./images/fish-cartoon.png" loading="lazy" alt="Fish Cartoon" />
+              </div>
+            </div>
+            <h4 class="card-title font-adlam font-normal mt-3">Fishes</h4>
+            <p class="font-sora text-sm">3 items</p>
+          </div>
+        </div>
+        <div class="card bg-card rounded-lg">
+          <div class="card-body p-7 items-center text-center">
+            <div class="avatar">
+              <div class="p-5 bg-white rounded-full mx-auto">
+                <img src="./images/cat-cartoon.png" loading="lazy" alt="Cat Cartoon" />
+              </div>
+            </div>
+            <h4 class="card-title font-adlam font-normal mt-3">Cats</h4>
+            <p class="font-sora text-sm">3 items</p>
+          </div>
+        </div>
+        <div class="card bg-card rounded-lg">
+          <div class="card-body p-7 items-center text-center">
+            <div class="avatar">
+              <div class="p-5 bg-white rounded-full mx-auto">
+                <img src="./images/bird-cartoon.png" loading="lazy" alt="Bird Cartoon" />
+              </div>
+            </div>
+            <h4 class="card-title font-adlam font-normal mt-3">Birds</h4>
+            <p class="font-sora text-sm">3 items</p>
+          </div>
+        </div>
+        <div class="card bg-card rounded-lg">
+          <div class="card-body p-7 items-center text-center">
+            <div class="avatar">
+              <div class="p-6 bg-white rounded-full mx-auto">
+                <img src="./images/mouse-cartoon.png" loading="lazy" alt="Mouse Cartoon" />
+              </div>
+            </div>
+            <h4 class="card-title font-adlam font-normal mt-3">Mice</h4>
+            <p class="font-sora text-sm">3 items</p>
+          </div>
+        </div>
+        <div class="card bg-card rounded-lg">
+          <div class="card-body p-7 items-center text-center">
+            <div class="avatar">
+              <div class="p-[1.4rem] bg-white rounded-full mx-auto">
+                <img src="./images/rabbit-cartoon.png" loading="lazy" alt="Rabbit Cartoon" />
+              </div>
+            </div>
+            <h4 class="card-title font-adlam font-normal mt-3">Rabbits</h4>
+            <p class="font-sora text-sm">3 items</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------ Trending Pet Products ------------------------------>
+    <section class="bg-trending lg:py-10">
+      <div class="my-14 lg:my-12 px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto text-black">
+        <h2 class="font-medium font-adlam text-2xl text-center sm:text-left">Trending Pet Products</h2>
+        <div class="mt-8 flex flex-col sm:flex-row gap-5 sm:gap-4 max-w-96 sm:max-w-none mx-auto">
+          <!------------------------------ T-shirt For Dogs ------------------------------>
+          <div class="px-6 pt-10 pb-40 relative bg-card rounded-lg sm:max-w-[50%]">
+            <div class="text-left text-black max-w-sm lg:max-w-md 2xl:max-w-lg">
+              <h1 class="text-3xl font-medium font-adlam">T-Shirt For Dogs</h1>
+              <p class="py-4 font-sora text-sm opacity-70 lg:max-w-[80%]">
+                Discover a world of treats, toys and essentials for your pets.
+              </p>
+              <button
+                class="btn btn-neutral bg-white border-none text-black hover:text-white text-base font-sora font-normal px-6 h-10 min-h-9">Shop
+                Now</button>
+            </div>
+            <div
+              class="absolute bottom-0 left-40 right-8 lg:left-[15rem] xl:left-48 xl:right-10 2xl:left-56 2xl:right-14">
+              <img src="./images/pet-mid.png" loading="lazy" alt="Medium Pet">
+            </div>
+          </div>
+          <!------------------------------ Pet Products ------------------------------>
+          <div class="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-3 lg:gap-4 flex-1">
+            <div class="flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 max-w-[40%] grid place-content-center">
+                <img src="./images/pet-couch.png" loading="lazy" alt="Pet Couch">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 max-w-[40%] grid place-content-center">
+                <img src="./images/fish-cartoon.png" loading="lazy" alt="Fish Cartoon">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 max-w-[40%] grid place-content-center">
+                <img src="./images/bird-cartoon.png" loading="lazy" alt="Bird Cartoon">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 xl:px-4 max-w-[40%] grid place-content-center">
+                <img src="./images/rabbit-cartoon.png" loading="lazy" alt="Rabbit Cartoon">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 xl:px-4 max-w-[40%] grid place-content-center">
+                <img src="./images/mouse-cartoon.png" loading="lazy" alt="Mouse Cartoon">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 max-w-[40%] grid place-content-center">
+                <img src="./images/dog-cartoon.png" loading="lazy" alt="Dog Cartoon">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 max-w-[40%] grid place-content-center">
+                <img src="./images/cat-cartoon.png" loading="lazy" alt="Cat Cartoon">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 max-w-[40%] grid place-content-center">
+                <img src="./images/pet-couch.png" loading="lazy" alt="Pet Couch">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+            <div class="hidden lg:flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 max-w-[40%] grid place-content-center">
+                <img src="./images/fish-cartoon.png" loading="lazy" alt="Fish Cartoon">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+            <div class="hidden lg:flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 max-w-[40%] grid place-content-center">
+                <img src="./images/dog-cartoon.png" loading="lazy" alt="Dog Cartoon">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+            <div class="hidden lg:flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 max-w-[40%] grid place-content-center">
+                <img src="./images/bird-cartoon.png" loading="lazy" alt="Bird Cartoon">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+            <div class="hidden lg:flex items-center gap-3 p-2 border rounded-lg bg-white">
+              <div class="bg-red-50 bg-opacity-70 rounded-lg p-3 xl:px-4 max-w-[40%] grid place-content-center">
+                <img src="./images/rabbit-cartoon.png" loading="lazy" alt="Rabbit Cartoon">
+              </div>
+              <div>
+                <div class="rating rating-xs xl:rating-sm items-center">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" /> <span
+                    class="font-sora text-xs xl:text-sm ml-2">4.5</span>
+                </div>
+                <h5 class="text-sm xl:text-base font-medium font-sora">Pet Bed</h5>
+                <p class="font-sora text-xs xl:text-sm">$39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------ Everyday Low Price ------------------------------>
+    <section class="text-black my-14 lg:my-20 px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto">
+      <h2 class="font-medium font-adlam text-2xl text-center sm:text-left">Everyday Low Price</h2>
+      <div class="mt-8 flex flex-col sm:flex-row gap-5 sm:gap-4 max-w-96 sm:max-w-none mx-auto">
+        <div
+          class="px-8 lg:px-14 pt-8 pb-40 lg:pb-8 relative bg-card rounded-lg bg-gradient-to-r from-[#f7ccfb] to-[#afd2fd] flex-1 lg:flex lg:flex-col justify-center">
+          <div
+            class="text-left text-black max-w-sm lg:max-w-md 2xl:max-w-lg pb-16 lg:pb-0 lg:flex lg:flex-col lg:justify-center">
+            <p class="hidden lg:block font-sora mb-2">Under Price</p>
+            <h1 class="text-xl font-medium font-adlam">Pet Grooming Mitt</h1>
+            <p class="hidden lg:block font-adlam my-2 text-white text-lg">(Easy Hair Removal)</p>
+            <p class="font-adlam text-4xl text-white lg:text-black mt-2">$7.99</p>
+          </div>
+          <div
+            class="absolute -bottom-3 left-32 sm:left-28 md:left-44 lg:left-[17rem] xl:left-96 xl:right-4 2xl:left-[28rem] 2xl:right-20">
+            <img src="./images/dog-mid.png" loading="lazy" alt="Medium Dog">
+          </div>
+        </div>
+        <div
+          class="px-8 pt-8 pb-40 relative bg-card rounded-lg bg-gradient-to-r from-[#fff9f4] to-[#f9df8a] sm:min-w-[40%]">
+          <div class="text-left text-black max-w-sm lg:max-w-md 2xl:max-w-lg pb-16">
+            <h1 class="text-xl font-medium font-adlam">T-Shirt For Dogs</h1>
+            <p class="font-adlam text-4xl text-yellow-400 mt-2">$7.99</p>
+          </div>
+          <div
+            class="absolute bottom-0 left-28 right-8 sm:left-12 sm:right-4 md:left-20 lg:left-32 xl:left-44 xl:right-12 2xl:left-56 2xl:right-20">
+            <img src="./images/pet-mid.png" loading="lazy" alt="Medium Pet">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://kit.fontawesome.com/7cc514643c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
